@@ -9,7 +9,9 @@ Write your own printf function.
 
 #### Read or watch:
 > [Secrets of printf](https://www.academia.edu/10297206/Secrets_of_printf_)
+
 > Group Projects.
+
 > Flow Charts.
 
 #### man or help:
@@ -126,33 +128,6 @@ int main(void)
     printf("Unknown:[%r]\n");
     return (0);
 }
-alex@ubuntu:~/c/printf$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c
-alex@ubuntu:~/c/printf$ ./printf
-Let's try to printf a simple sentence.
-Let's try to printf a simple sentence.
-Length:[39, 39]
-Length:[39, 39]
-Negative:[-762534]
-Negative:[-762534]
-Unsigned:[2147484671]
-Unsigned:[2147484671]
-Unsigned octal:[20000001777]
-Unsigned octal:[20000001777]
-Unsigned hexadecimal:[800003ff, 800003FF]
-Unsigned hexadecimal:[800003ff, 800003FF]
-Character:[H]
-Character:[H]
-String:[I am a string !]
-String:[I am a string !]
-Address:[0x7ffe637541f0]
-Address:[0x7ffe637541f0]
-Percent:[%]
-Percent:[%]
-Len:[12]
-Len:[12]
-Unknown:[%r]
-Unknown:[%r]
-alex@ubuntu:~/c/printf$
 ```
 
 > We strongly encourage you to work all together on a set of tests
@@ -177,30 +152,18 @@ alex@ubuntu:~/c/printf$
 ```
 Write a function that produces output according to a format.
 
-> Prototype: int _printf(const char *format, ...);
-
-
-> Returns: the number of characters printed (excluding the null byte used to end output to strings)
-
-> write output to stdout, the standard output stream
-
-> format is a character string. The format string is composed of zero or more directives. See man 3 printf for more detail. You need to handle the following conversion specifiers:
-
-> > c
-
-> > s
-
-> > %
-
-> You don’t have to reproduce the buffer handling of the C library printf function
-
-> You don’t have to handle the flag characters
-
-> You don’t have to handle field width
-
-> You don’t have to handle precision
-
-> You don’t have to handle the length modifiers
+Prototype: int _printf(const char *format, ...);
+Returns: the number of characters printed (excluding the null byte used to end output to strings)
+write output to stdout, the standard output stream
+format is a character string. The format string is composed of zero or more directives. See man 3 printf for more detail. You need to handle the following conversion specifiers:
+c
+s
+%
+You don’t have to reproduce the buffer handling of the C library printf function
+You don’t have to handle the flag characters
+You don’t have to handle field width
+You don’t have to handle precision
+You don’t have to handle the length modifiers
 ```
 
 
